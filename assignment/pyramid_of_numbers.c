@@ -111,6 +111,10 @@ void print_big_int(const struct BigInt *big_int){
 	printf("%d", &big_int);
 }
 void multiply(const struct BigInt *big_int, int factor, struct BigInt *big_result){
+	BigInt bigInt[MAX_DIGITS];
+	for (size_t i = 0; i < ; i++) {
+
+	}
 	big_result = big_int * factor;
 }
 void divide(const struct BigInt *big_int, int divisor, struct BigInt *big_result){
