@@ -108,14 +108,16 @@ int strtobig_int(const char *str, int len, struct BigInt *big_int){
 }
 
 void print_big_int(const struct BigInt *big_int){
-	printf("%d", &big_int);
+	for (int i=0; i < big_int->digits_count; i++) {
+        printf("%d",big_int->the_int[i] );
+			}
 }
 void multiply(const struct BigInt *big_int, int factor, struct BigInt *big_result){
 	BigInt bigInt[MAX_DIGITS];
 	for (size_t i = 0; i < ; i++) {
-
+		big_result = big_int * factor;
 	}
-	big_result = big_int * factor;
+
 }
 void divide(const struct BigInt *big_int, int divisor, struct BigInt *big_result){
 	big_result = big_int / divisor;
